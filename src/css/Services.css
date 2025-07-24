@@ -1,0 +1,101 @@
+.services{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    padding: 100px 30px;
+
+}
+
+
+.services-cards-container{
+    margin-top: 40px;
+    padding: 40px 0px;
+    gap: 20px;
+}
+
+
+.services-cards-container>.service-card{
+flex: 1;
+display: flex;
+gap: 20px;
+padding: 30px;
+min-height: 300px;
+align-self: stretch;
+border-bottom: 1px solid var(--blue-color);
+}
+
+.services-cards-container>.service-card>.domain{
+    flex: 2;
+    font-size: 45px;
+    padding: 10px;
+    font-family: "orbitron";
+    color: white;
+    align-self: stretch;
+    border-right: 1px dashed var(--blue-color);
+    text-transform: capitalize;
+}
+
+.services-cards-container>.service-card>.desc{
+    flex: 4;
+    font-size: var(--small-font);
+    color: var(--white-color);
+    font-weight: 300;
+    /* font-family: "orbitron"; */
+    width: 30%;
+    height: 100%;
+}
+
+
+
+li{
+    font-size: var(--small-font);
+    padding: 0px 20px;
+    color: var(--white-color);
+    position: relative;
+}
+
+li::before{
+    content: '';
+    color: red;
+    width: 8px;
+    aspect-ratio: 1;
+    position: absolute;
+   top:50%;
+   transform: translate(-50%,-50%);
+   left: 0;
+    border: 1px solid var(--blue-color);
+    z-index: 10;
+}
+
+@media (max-width:1100px){
+
+    .services-head{
+        font-family: "orbitron";
+        font-weight: 300;
+    }
+
+    .services-head>.stroke,.services-head>.fill{
+        display: block;
+    }
+    .services-cards-container>.service-card{
+        flex-direction: column;
+        border: 1px solid var(--blue-color);
+    }
+
+    .services-cards-container>.service-card:last-child{
+    border-color: var(--blue-color);
+}
+    .services-cards-container>.service-card>.desc{
+        width: 100%;
+        /* background: red; */
+        flex: 1;
+    }
+    .services-cards-container>.service-card>.domain{
+    font-size: 30px;
+    flex: 1;
+border: none;
+    border-bottom: 1px dashed var(--blue-color);
+
+}
+
+}

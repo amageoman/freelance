@@ -1,0 +1,184 @@
+.hero-section {
+    width: 100%;
+    min-height: calc(100vh);
+    height: calc(100vh);
+    padding: 100px 30px;
+    /* background: linear-gradient(60deg, #01283e 10%, #000 30% 60%, #01283e); */
+    overflow: hidden;
+
+
+
+
+}
+
+.hero-title {
+    color: var(--blue-color);
+    font-family: "orbitron";
+    font-size: var(--large-font);
+    font-weight: 600;
+
+}
+
+.left-box {
+    color: var(--white-color);
+    font-family: "audiowide";
+    font-size: var(--large-font);
+    font-weight: 400;
+    padding: 30px;
+
+}
+
+.left-box div {
+    text-transform: none;
+    font-size: var(--large-font);
+}
+
+.right-box {
+    color: var(--white-color);
+    font-family: "codystar";
+    font-size: var(--small-font);
+    font-weight: 600;
+}
+
+
+
+
+.right-box span {
+    display: inline-block;
+    color: var(--blue-color);
+    font-size: var(--medium-font);
+    font-weight: 900;
+    margin-block: 40px;
+    font-family: "orbitron";
+
+
+}
+
+.left-box .balls {
+    width: 5px;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+}
+
+.left-box .balls .ball {
+    opacity: 0;
+    width: 5px;
+    top: 0;
+    left: 0;
+    aspect-ratio: 1;
+    position: absolute;
+    background: var(--blue-color);
+}
+
+.button-container>button {
+    flex: 1;
+    padding: 10px 30px;
+    background: transparent;
+    font-weight: 600;
+    font-family: "orbitron";
+    color: var(--blue-color);
+    border-image: linear-gradient(to left, var(--blue-color) 5%, transparent 5% 95%, var(--blue-color) 95%);
+    border-image-repeat: stretch;
+    border-image-width: 2px;
+    border-image-slice: 1;
+}
+
+.button-container>button:hover {
+    background: var(--blue-color);
+    color: black;
+    transition: all .25s ease;
+
+}
+
+
+
+
+
+@media (max-width:1100px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 20px;
+    }
+
+
+    .boxes {
+        width: 100%;
+        height: fit-content !important;
+    }
+
+    .left-box {
+        padding: 20px;
+        place-items: start;
+    }
+
+
+
+
+    .right-box {
+        padding: 20px;
+        gap: 30px;
+    }
+
+
+
+    .button-container {
+        flex-direction: column;
+    }
+
+
+
+}
+
+@media (max-width:600px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 20px;
+    }
+
+  
+
+    .boxes {
+        width: 100%;
+    }
+
+    .left-box {
+        padding: 20px;
+        place-items: start;
+    }
+
+
+    .left-box .balls {
+        width: 2px;
+
+
+    }
+
+    .left-box .balls .ball {
+        width: 2px;
+    }
+
+    .right-box {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .right-box span {
+        margin-block: 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container>button {
+        padding: 10px;
+    }
+
+
+}

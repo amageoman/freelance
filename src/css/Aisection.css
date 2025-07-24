@@ -1,0 +1,45 @@
+.aisection{
+  min-height: 100vh;
+    height: auto;
+    width: 100%;
+    padding: 100px 30px;
+}
+
+
+
+.card{
+    border-radius: 10px;
+     background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  backdrop-filter: blur(10px);
+}
+
+.number{
+    display: grid;
+    place-items: center;
+    
+    
+    
+    font-size: var(--large-font);
+    font-family: 'dotgothic16';font-weight: 900;
+    color: var(--white-color);
+}
+
+.head{
+     font-size: var(--medium-font);
+    font-family: 'audiowide';
+    font-weight: 900;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.cont{
+     font-size: var(--medium-font);
+    font-family: 'codystar';font-weight: 900;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+@media (max-width:1100px){
+    .number,.aicontent{
+        align-self: flex-start;
+    }
+}

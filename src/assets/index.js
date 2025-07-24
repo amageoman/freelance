@@ -1,0 +1,1 @@
+export { default as reactlogo } from './reactlogo.png'

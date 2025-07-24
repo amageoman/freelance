@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+:root {
+    /* --blue-color:#2cf1ee; */
+    --blue-color: #41b3e3;
+    --black-color: #000;
+    /* --blue-color:#10d4fc; */
+    --white-color: #fff;
+    color: #008af4;
+    --large-font: 70px;
+    --medium-font: 30px;
+    --small-font: 20px;
+
+}
+
+#root {
+    z-index: -100;
+}
+
+button:focus,
+.button:active {
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.header {
+    background: linear-gradient(to right, #000 30% 60%, #01283e);
+    color: var(--blue-color);
+    font-family: "audiowide";
+    font-size: var(--small-font);
+    /* overflow: hidden; */
+}
+
+
+.closeBtn ,.navs-mobile{
+    display: none;
+    
+}
+
+.navs>.nav{
+    cursor: pointer;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    /* background: var(--blue-color); */
+    background: linear-gradient(60deg, #01283e 10%, #000 30% 60%, #01283e);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.services-head {
+    font-size: var(--large-font);
+    font-weight: 400 !important;
+    font-family: "audiowide";
+    text-transform: capitalize;
+    border-image: linear-gradient(45deg, var(--blue-color) 10%, transparent, transparent, transparent, var(--white-color) 95%);
+    border-image-repeat: stretch;
+    border-image-width: 2px;
+    border-image-slice: 1;
+    display: inline-block;
+    padding: 30px;
+    font-weight: 600;
+}
+
+
+
+.services-head>.stroke {
+    display: inline;
+    color: var(--white-color);
+
+}
+
+.services-head>.fill {
+    display: inline;
+    color: var(--blue-color);
+
+}
+
+@media (max-width:1300px) {
+    :root {
+        --large-font: 50px;
+        --medium-font: 26px;
+        --small-font: 18px;
+    }
+}
+
+@media (max-width:600px) {
+    :root {
+        --large-font: 30px;
+        --medium-font: 20px;
+        --small-font: 14px;
+    }
+}
+
+@media (max-width:1100px) {
+
+    body{
+            background: linear-gradient(to bottom,black 10%, #01283e 20%, #000  40%, #01283e 60% , black 80%, #01283e);
+
+    }
+
+    .services-head {
+        width: 100%;
+        font-family: "orbitron";
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    .services-head>.stroke,
+    .services-head>.fill {
+        display: block;
+    }
+
+    .tech-row {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .tech-card {
+        width: 200px;
+        height: 50px !important;
+    }
+
+    .closeBtn {
+        display: inline;
+    }
+
+    .navs{
+        display: none;
+       
+    }
+
+    .navs-mobile {
+        
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        top: 70px;
+        right: 0;
+        background: black;
+        z-index: 1000;
+        
+
+        transition: all .25s ease;
+        animation: slide .5s forwards;
+    }
+
+  
+
+}
