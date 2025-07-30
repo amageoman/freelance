@@ -43,22 +43,26 @@ const Speciality = () => {
 
 
         scrollTl2.from('.card-1', {
-            scale: 0,
+            scale: 2,
+            opacity:0,
             xPercent: -100,
             yPercent: -100,
 
         }).from('.card-2', {
-            scale: 0,
+            scale: 2,
+            opacity:0,
             xPercent: 100,
             yPercent: -100,
 
         }, "=").from('.card-3', {
-            scale: 0,
+            scale: 2,
+            opacity:0,
             xPercent: -100,
             yPercent: 100,
 
         }, "=").from('.card-4', {
-            scale: 0,
+            scale: 2,
+            opacity:0,
             xPercent: 100,
             yPercent: 100,
 

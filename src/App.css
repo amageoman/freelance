@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 :root {
     /* --blue-color:#2cf1ee; */
     --blue-color: #41b3e3;
@@ -15,6 +19,16 @@
 
 #root {
     z-index: -100;
+}
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    /* background: var(--blue-color); */
+    background: linear-gradient(60deg, #01283e 10%, #000 30% 60%, #01283e);
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 button:focus,
@@ -43,6 +57,10 @@ button:focus,
     
 }
 
+.closeBtn>svg>path{
+    fill: var(--blue-color) !important;
+}
+
 .navs>.nav{
     cursor: pointer;
 }
@@ -52,15 +70,16 @@ button:focus,
 }
 
 
-body {
-    min-height: 100vh;
-    width: 100%;
-    /* background: var(--blue-color); */
-    background: linear-gradient(60deg, #01283e 10%, #000 30% 60%, #01283e);
-    overflow-x: hidden;
-    overflow-y: scroll;
+.footer{
+    border-top: 1px dotted var(--blue-color);
+    color: var(--white-color);
+    font-family:sans-serif;
+    font-size: var(--small-font);
 }
 
+.footer .socico  a>svg{
+    fill: var(--white-color) !important;
+}
 
 .services-head {
     font-size: var(--large-font);
@@ -74,8 +93,8 @@ body {
     display: inline-block;
     padding: 30px;
     font-weight: 600;
-}
-
+    }
+   
 
 
 .services-head>.stroke {
@@ -111,6 +130,11 @@ body {
     body{
             background: linear-gradient(to bottom,black 10%, #01283e 20%, #000  40%, #01283e 60% , black 80%, #01283e);
 
+    }
+
+    .footer>div{
+        flex-direction: column;
+        gap: 40px;
     }
 
     .services-head {

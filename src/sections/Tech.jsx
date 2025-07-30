@@ -8,23 +8,23 @@ const Tech = () => {
     const frontendtechs = [
         {
             icon: 'reactlogo',
-            label: "React JS"
+            label: "React "
         },
         {
             icon: 'reactlogo',
-            label: "Angular JS"
+            label: "Angular "
         },
         {
             icon: 'reactlogo',
-            label: "Next JS"
+            label: "Next "
         },
         {
             icon: 'reactlogo',
-            label: ""
+            label: "Vue "
         },
         {
             icon: 'reactlogo',
-            label: "5"
+            label: "React Native"
 
 
         }
@@ -32,60 +32,57 @@ const Tech = () => {
     const backendtechs = [
         {
             icon: 'reactlogo',
-            label: "1"
+            label: "Node"
         },
         {
             icon: 'reactlogo',
-            label: "2"
+            label: "Python"
         },
         {
             icon: 'reactlogo',
-            label: "3"
+            label: "Java Spring"
         },
         {
             icon: 'reactlogo',
-            label: "4"
+            label: "Go"
         }
     ]
     const cloudtechs = [
         {
             icon: 'reactlogo',
-            label: "1"
+            label: "AWS"
         },
         {
             icon: 'reactlogo',
-            label: "2"
+            label: "Google Cloud"
         },
         {
             icon: 'reactlogo',
-            label: "3"
+            label: "Azure"
         },
         {
             icon: 'reactlogo',
-            label: "4"
+            label: "Kubernetes"
         }
     ]
     const aiml = [
         {
             icon: 'reactlogo',
-            label: "1"
+            label: "TensorFlow"
         },
         {
             icon: 'reactlogo',
-            label: "2"
+            label: "pyTorch"
         },
         {
             icon: 'reactlogo',
-            label: "3"
+            label: "OpenAI"
         },
         {
             icon: 'reactlogo',
-            label: "4"
+            label: "Custom AI"
         },
-        {
-            icon: 'reactlogo',
-            label: "5"
-        }
+        
     ]
 
 
@@ -127,7 +124,7 @@ gsap.set(row,{
             gsap.timeline({repeat:-1}).to(row, {
                 xPercent: index%2==0?-50:0,
                 repeat: -1,
-                duration: 20,
+                duration: 40,
                 ease: 'none'
             }).set(row,{
                 xPercent:0

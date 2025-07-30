@@ -93,6 +93,8 @@ const Aisection = () => {
         tl2.fromTo('.head',
             {
                 duration: 1,
+                y: -140,
+
 
                 opacity: 0
             }, {
@@ -105,11 +107,13 @@ const Aisection = () => {
         }).to('.head', {
             duration: 1,
             delay: 2,
-
+            y: 120,
             opacity: 0
         }).fromTo('.head',
             {
                 duration: 1,
+                y: -140,
+
 
                 opacity: 0
             }, {
@@ -122,11 +126,13 @@ const Aisection = () => {
         }).to('.head', {
             duration: 1,
             delay: 2,
-
+            y: 120,
             opacity: 0
         }).fromTo('.head',
             {
                 duration: 1,
+                y: -140,
+
 
                 opacity: 0
             }, {
@@ -139,11 +145,13 @@ const Aisection = () => {
         }).to('.head', {
             duration: 1,
             delay: 2,
-
+            y: 120,
             opacity: 0
         }).fromTo('.head',
             {
                 duration: 1,
+                y: -140,
+
 
                 opacity: 0
             }, {
@@ -156,7 +164,7 @@ const Aisection = () => {
         }).to('.head', {
             duration: 1,
             delay: 2,
-
+            y: 120,
             opacity: 0
         })
 
@@ -165,6 +173,7 @@ const Aisection = () => {
         tl3.fromTo('.cont',
             {
                 duration: 1,
+                y: -130,
 
                 opacity: 0
             }, {
@@ -177,11 +186,12 @@ const Aisection = () => {
         }).to('.cont', {
             duration: 1,
             delay: 2,
-
+            y: 100,
             opacity: 0
         }).fromTo('.cont',
             {
                 duration: 1,
+                y: -130,
 
                 opacity: 0
             }, {
@@ -194,11 +204,12 @@ const Aisection = () => {
         }).to('.cont', {
             duration: 1,
             delay: 2,
-
+            y: 100,
             opacity: 0
         }).fromTo('.cont',
             {
                 duration: 1,
+                y: -130,
 
                 opacity: 0
             }, {
@@ -211,11 +222,12 @@ const Aisection = () => {
         }).to('.cont', {
             duration: 1,
             delay: 2,
-
+            y: 100,
             opacity: 0
         }).fromTo('.cont',
             {
                 duration: 1,
+                y: -130,
 
                 opacity: 0
             }, {
@@ -228,7 +240,7 @@ const Aisection = () => {
         }).to('.cont', {
             duration: 1,
             delay: 2,
-
+            y: 100,
             opacity: 0
         })
     })
@@ -239,10 +251,10 @@ const Aisection = () => {
 
             </div>
 
-            <div className="scrollCards w-[100%]  min-h-[500px] !mt-10 relative">
+            <div className="scrollCards w-[100%]  min-h-[500px] !mt-10 relative overflow-hidden">
                 <div className="card h-[100%] min-h-[500px] flex flex-row gap-5 justify-center items-center   !p-10">
                     <div className="number flex-1  "></div>
-                    <div className=' aicontent flex-3 flex flex-col  gap-10 justify-start  h-[100%]'>
+                    <div className=' aicontent flex-3 flex flex-col  gap-10 justify-start  h-[100%] '>
                         <div className="head"></div>
                         <div className="cont"></div>
                     </div>

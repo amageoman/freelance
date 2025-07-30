@@ -10,6 +10,7 @@ import Services from './sections/Services'
 import Aisection from './sections/Aisection'
 import { useGSAP } from '@gsap/react'
 import Tech from './sections/Tech'
+import Footer from './sections/Footer'
 
 function App() {
   gsap.registerPlugin(ScrollTrigger)
@@ -107,7 +108,7 @@ function App() {
       <div ref={ref3}> <Services /></div>
       <div ref={ref4}> <Aisection /></div>
       <div ref={ref5}><Tech /></div>
-      <div ref={ref6} className="w-[100%] h-[100vh]"></div>
+      <div ref={ref6} ><Footer/></div>
     </>
   )
 }
