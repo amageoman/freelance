@@ -11,6 +11,7 @@ import Aisection from './sections/Aisection'
 import { useGSAP } from '@gsap/react'
 import Tech from './sections/Tech'
 import Footer from './sections/Footer'
+import LandingSection from './sections/LandingSection'
 
 function App() {
   gsap.registerPlugin(ScrollTrigger)
@@ -103,7 +104,8 @@ function App() {
             </svg> */}
       {/* <div className="mask"></div> */}
       <div ref={ref1} className='sticky top-0 z-[1000000]'> <Header onNav={(ref) => goToRef(ref)} refList={{ref1,ref2,ref3,ref4,ref5,ref6}} /></div>
-      <div ref={ref2}> <HeroSection /></div>
+      {/* <div ref={ref2}> <HeroSection /></div> */}
+      <div ref={ref2}> <LandingSection /></div>
       <div  ><Speciality /></div>
       <div ref={ref3}> <Services /></div>
       <div ref={ref4}> <Aisection /></div>

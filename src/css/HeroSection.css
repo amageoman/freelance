@@ -1,6 +1,9 @@
+
+/* no more in use */
+
 .hero-section {
     width: 100%;
-    min-height: calc(100vh);
+    /* min-height: calc(100vh); */
     height: calc(100vh);
     padding: 100px 30px;
     /* background: linear-gradient(60deg, #01283e 10%, #000 30% 60%, #01283e); */
@@ -48,7 +51,7 @@
     color: var(--blue-color);
     font-size: var(--medium-font);
     font-weight: 900;
-    margin-block: 40px;
+    margin-block: 10px;
     font-family: "orbitron";
 
 

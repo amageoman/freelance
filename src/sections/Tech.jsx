@@ -12,6 +12,10 @@ const Tech = () => {
         },
         {
             icon: 'reactlogo',
+            label: "Flutter "
+        },
+        {
+            icon: 'reactlogo',
             label: "Angular "
         },
         {

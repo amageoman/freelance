@@ -1,3 +1,6 @@
+
+// no more in use
+
 import { useGSAP } from '@gsap/react';
 import '../css/HeroSection.css'
 

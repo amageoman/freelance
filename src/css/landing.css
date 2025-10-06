@@ -1,0 +1,14 @@
+.title{
+    
+     color: var(--blue-color);
+    font-family: "audiowide";
+    /* font-size: var(--large-font); */
+    font-weight: 600;
+}
+
+.sub-title{
+      color: var(--white-color);
+    font-family: "codystar";
+    font-size: var(--small-font);
+    font-weight: 600;
+}
